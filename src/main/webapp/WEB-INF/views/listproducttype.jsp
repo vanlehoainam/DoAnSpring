@@ -17,13 +17,13 @@
 		<div class="pagetitle">
 
 			<div class="container text-center" style="margin-right: 10px">
-				<h1 class="mt-5 mb-4 text-center">Danh sách product type</h1>
+				<h1 class="mt-5 mb-4 text-center">Loại Sản Phẩm</h1>
 				<table class="table table-striped">
 					<thead>
 						<tr>
 							<th>ID</th>
-							<th>Name</th>
-							<th>Action</th>
+							<th>Tên</th>
+							<th>Hành Động</th>
 						</tr>
 					</thead>
 					<tbody>

@@ -9,6 +9,16 @@
 <title>Insert title here</title>
 <%@ include file="/WEB-INF/filecss/css.jsp"%>
 <%@ include file="/WEB-INF/filecss/js.jsp"%>
+<style type="text/css">
+table{
+    border:1px solid black;
+}
+th{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}</style>
 </head>
 <body>
 	<%@ include file="/WEB-INF/layout/header.jsp"%>
@@ -16,37 +26,37 @@
 	<main id="main" class="main">
 		<div class="pagetitle">
 			<div class="container text-center" style="margin-right: 10px">
-				<h1 class="mt-5 mb-4 text-center">Danh sách product type</h1>
-				<table class="table table-striped">
+				<h1 class="mt-5 mb-4 text-center">Danh Sách Sản Phẩm</h1>
+				<table class="table table-striped" border="2px">
 					<thead>
 						<tr>
-							<th>id</th>
-							<th>name</th>
-							<th>price</th>
-							<th>ten product type</th>
-							<th>image</th>
-							<th>Action</th>
+							<th>ID</th>
+							<th>Tên</th>
+							<th>Giá</th>
+							<th>Loại Sản Phẩm</th>
+							<th>Ảnh</th>
+							<th>Hành Động</th>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach items="${products}" var="product">
 							<tr>
 								<td>${product.id}</td>
-								<td>${product.name}</td>
+								<td>${product.name}</td>	
 								<td>${product.price}</td>
 								<td>${product.productType.name}</td>
 								<td><img alt="" src="${product.image}"></td>
-								<td>
+								
 								<td><a class="btn btn-danger btn-sm"
-									href="updateForm?productID=${product.id}">edit</a> <a
+									href="updateForm?productID=${product.id}">SỬA</a> <a
 									class="btn btn-warning btn-sm text-white"
-									href="deleteproduct?productID=${product.id}">Delete</a></td>
+									href="deleteproduct?productID=${product.id}">XOÁ</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
 				<a href="${pageContext.request.contextPath}/product/showForm"
-					class="btn btn-primary">Thêm</a>
+					class="btn btn-primary">THÊM</a>
 			</div>
 	</main>
 	</div>

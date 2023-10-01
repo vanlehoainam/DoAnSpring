@@ -16,7 +16,7 @@
 	<%@ include file="/WEB-INF/layout/nav.jsp"%>
 	<main id="main" class="main">
 		<div class="pagetitle">
-			<h1 class="mt-5 mb-4 text-center">Add Product</h1>
+			<h1 class="mt-5 mb-4 text-center">THÊM SẢN PHẨM</h1>
 			<form:form action="saveProduct" method="post" modelAttribute="product">
 				<form:hidden path="id" />
 				<div class="mb-3">
